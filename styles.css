@@ -1,0 +1,5 @@
+/* Site nav */
+
+.site-nav .link.current {
+  color: green;
+}
