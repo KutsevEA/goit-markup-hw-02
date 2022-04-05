@@ -33,10 +33,10 @@ body {
   list-style: none;
 }
 
-h2 {
+.topic {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1, 16;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -48,7 +48,7 @@ h2 {
   color: #000;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1, 2;
+  line-height: 1.2;
   font-family: raleway, sans-serif;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -59,19 +59,28 @@ h2 {
   color: var(--focus-hover-color);
 }
 
+.logo-part {
+  color: #2196f3;
+}
+
 /* Site nav */
 
-.site-nav .link {
+.site-nav-link {
   color: var(--title-text-color);
   text-decoration: none;
 }
 
-.site-nav .current {
+.site-nav-link-current {
   color: var(--site-current-page-color);
+  text-decoration: none;
 }
 
-.link:hover,
-.link:focus {
+.site-nav-link:hover,
+.site-nav-link:focus {
+  color: var(--focus-hover-color);
+}
+.site-nav-link-current:hover,
+.site-nav-link-current:focus {
   color: var(--focus-hover-color);
 }
 
@@ -79,18 +88,18 @@ h2 {
 .header-contacts {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
 /* Header Contacts */
 
-.header-contacts .link {
+.header-contacts-link {
   color: var(--primary-text-color);
   text-decoration: none;
 }
-.header-contacts .link:hover,
-.header-contacts .link:focus {
+.header-contacts-link:hover,
+.header-contacts-link:focus {
   color: var(--focus-hover-color);
 }
 
@@ -99,7 +108,7 @@ h2 {
   color: #fff;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1, 36;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -115,7 +124,7 @@ h2 {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
-  line-height: 1, 87;
+  line-height: 1.87;
   display: flex;
   align-items: center;
   text-align: center;
@@ -125,8 +134,8 @@ h2 {
 
 .button.primary:hover,
 .button.primary:focus {
-  background-color: var(--button-bgc-secondary-color);
-  color: var(--button-secondary-text-color);
+  background-color: #188ce8;
+  color: var(--button-text-primary-color);
 }
 
 /* Features Section */
@@ -134,15 +143,14 @@ h2 {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
-.features .text {
-  font-weight: 400;
+.features-text {
   font-size: 14px;
-  line-height: 1, 71;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
@@ -159,15 +167,14 @@ h2 {
 .name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 18;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
 .work-title {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 1, 18;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -188,7 +195,7 @@ h2 {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 62;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
@@ -208,21 +215,20 @@ h2 {
   letter-spacing: 0.06em;
 }
 
-.portfolio a {
+.portfolio-link {
   text-decoration: none;
 }
 
-.portfolio a:hover,
-.portfolio a:focus {
+.portfolio-link:hover,
+.portfolio-link:focus {
   background-color: var(--main-bgc-color);
   color: var(--focus-hover-color);
 }
 
-.portfolio .segment {
+.portfolio-description {
   color: var(--primary-text-color);
-  font-weight: 400;
   font-size: 16px;
-  line-height: 1, 87;
+  line-height: 1.87;
   letter-spacing: 0.03em;
 }
 
@@ -232,7 +238,7 @@ h2 {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  line-height: 1, 19;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
@@ -242,17 +248,17 @@ h2 {
   color: var(--focus-hover-color);
 }
 
-footer {
+.footer {
   background-color: var(--footer-bgc-color);
 }
 
 .map {
   color: var(--button-text-primary-color);
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1, 71;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
+  font-style: normal;
 }
 
 .map:hover,
@@ -262,11 +268,11 @@ footer {
 
 .contact {
   color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1, 71;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
+  font-style: normal;
 }
 .contact:hover,
 .contact:focus {
